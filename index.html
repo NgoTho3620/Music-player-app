@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Music Player App</title>
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"
+                    style="background-image: url('https://photo-resize-zmp3.zadn.vn/w320_r1x1_webp/cover/e/7/a/6/e7a669cae8bc05724a59bae10a9e02d3.jpg')">
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class='bx bx-revision'></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class='bx bx-skip-previous'></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class='bx bx-pause icon-pause'></i>
+                    <i class='bx bx-play icon-play'></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class='bx bx-skip-next'></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class='bx bx-shuffle'></i>
+                </div>
+            </div>
+
+            <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+
+            <audio src="" id="audio"></audio>
+        </div>
+
+        <div class="playlist"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
